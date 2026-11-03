@@ -1,0 +1,7 @@
+configuration:
+  portal_url:
+    name: Buddy portal address
+    description: Leave as it is unless you were given a different address.
+  enrol_code:
+    name: Enrolment code
+    description: The code from your Buddy welcome sheet (looks like ABCD-EFGH-JKLM). Paste it once, save, then start the add-on. It can be left in place afterwards.

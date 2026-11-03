@@ -1,0 +1,24 @@
+# Home Assistant add-on definition. Home Assistant does NOT build this: it pulls the prebuilt
+# image from Docker Hub, so this repository contains no source code.
+# IMPORTANT: "version" must exactly match a tag you pushed (DOCKERHUB_USER/buddy-home:<version>).
+name: Buddy Home Agent
+version: "1.3.0"
+slug: buddy_home
+description: Chat with your home through Buddy, managed from buddy.bengom.co.uk
+url: https://buddy.bengom.co.uk
+image: DOCKERHUB_USER/buddy-home
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: services
+boot: auto
+homeassistant_api: true
+hassio_api: false
+host_network: false
+options:
+  portal_url: "https://buddy.bengom.co.uk"
+  enrol_code: ""
+schema:
+  portal_url: url
+  enrol_code: "str?"
