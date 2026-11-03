@@ -6,7 +6,7 @@ version: "1.3.0"
 slug: buddy_home
 description: Chat with your home through Buddy, managed from buddy.bengom.co.uk
 url: https://buddy.bengom.co.uk
-image: DOCKERHUB_USER/buddy-home
+image: godfrey27/buddy-home
 arch:
   - aarch64
   - amd64
